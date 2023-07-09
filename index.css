@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+main {
+    display: flex;
+}
+
+#left-col {
+    width: 25%;
+    margin-right: 50px;
+
+}
+
+#mid {
+    width: 50%;
+}
+
+#right-col {
+    width: 25%;
+    margin-left: 50px;
+
+}
