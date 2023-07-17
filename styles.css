@@ -1,1 +1,74 @@
 /* Write your CSS here! */
+
+h1 {
+    text-align: center;
+}
+  
+#scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+}
+  
+  /* for Chrome */
+@-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+}
+  
+@keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: rgb(174, 255, 233);
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+}
+
+#left-col {
+    width: 25%;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+#mid {
+    width: 50%;
+}
+
+#right-col {
+    width: 25%;
+    margin-left: 50px;
+
+}
+
+p {
+    color: black;
+}
+
+#peter1 {
+    margin-left: 20px;
+}
+
+img {
+    border-radius: 15px;
+}
